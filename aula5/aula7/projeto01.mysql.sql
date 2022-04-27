@@ -1,4 +1,4 @@
-create database projeto01
+create database projeto01;
 
 use projeto01;
 
