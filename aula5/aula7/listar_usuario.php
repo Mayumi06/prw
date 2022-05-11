@@ -21,6 +21,7 @@
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th>Telefone</th>
+                <th>Excluir</th>
             </tr>
         </tr>
         <?php
@@ -28,9 +29,10 @@
         {
             echo "<tr>";
             echo "<td>" . $row['id_usuario'] . "</td>";
-            echo "<td>" . $row['nome_usuario'] . "</td>";
+            echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>";
             echo "<td>" . $row['email_usuario'] . "</td>";
             echo "<td>" . $row['telefone_usuario'] . "</td>";
+            echo "<td><a href='excluir_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";
             echo "</tr>";
         }
         ?>
