@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    h1{
+        text-align: center;
+    }
+    fieldset{
+        width: 500px;
+        height: 270px;
+        margin: auto;
+    }
+</style>
+</head>
+<body>
+<h1>Cadastro Agenda</h1>
+<form action="cadastro_agenda.php" method="post">
+<fieldset>
+    <table>
+        <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="txtNome" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Apelido:</td>
+            <td><input type="text" name="txtApeliod" size="50" ><br></td>
+        </tr>
+        <tr>
+            <td>Endereço:</td>
+            <td><input type="text" name="txtEndereço" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Bairro:</td>
+            <td><input type="text" name="txtBairro" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Cidade:</td>
+            <td><input type="text" name="txtCidade" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Estado</td>
+            <td><select name = "selectEstado"><br>
+                <option value = "select" ></option> </option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option> 
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option> 
+                <option>TO</option>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Telefone:</td>
+            <td><input type="text" name="txtTelefone" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Celular:</td>
+            <td><input type="text" name="txtCelular" size="30"><br></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="txtEmail" size="50"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="enviar">
+            </td>
+        </tr>
+    </table>
+</fieldset>
+</form>
+</body>
+
+</html>

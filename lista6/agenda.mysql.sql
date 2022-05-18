@@ -1,5 +1,6 @@
-create table agenda (
-    id_agenda int not null auto_increment,
+
+create table agenda(
+    id_agenda    int not null auto_increment,
     nome varchar(50) not null,
     apelido varchar(40) not null,
     endereco varchar(70) not null,
