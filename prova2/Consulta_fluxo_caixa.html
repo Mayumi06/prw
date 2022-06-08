@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Fluxo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Consulta de Fluxo  - IFSP</h1>
+    <div id="teste">
+        <form method="post" action="consulta_fluxo_caixa.php" enctype='multipart/form-data'>
+            <fieldset>
+                <legend>Consulta</legend>
+                <div>
+                    <td>Tipo:</td>
+                    <td><input name="tCaul" type="radio" id="cSaldoTotal" value="0"><label for="cSaldoTotal">Saldo Total</label><br></td>
+                    <td><input name="tCaul" type="radio" id="cTotalSaidas" value="1"><label for="cTotalSaidas">Total Saidas</label><br></td>
+                    <td><input name="tCaul" type="radio" id="cTotalEntradas" value="1"><label for="cTotalEntradas">Total Entradas</label><br></td>
+                </div>
+                <div class="form-item">
+                    <input id="btn" type="submit" value="Enviar" >
+                    <a href='index.php'> Voltar</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
