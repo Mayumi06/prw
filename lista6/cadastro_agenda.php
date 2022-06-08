@@ -19,8 +19,8 @@ echo "Telefone: " .$telefone_agenda ."<br>";
 echo "Celular: " .$celular_agenda ."<br>";
 echo "E-mail: " .$email_agenda ."<br>";
 
-$sql= "INSERT INTO usuario (nome_agenda, apelido_agenda, bairro_agenda, cidade_agenda, estado_agenda, telefone_agenda, celular_agenda, email_agenda, telefone_agenda, )
-VALUES (' " .$nome_agenda." ', ' ".$apelido_agenda. " ',' ".$email_agenda." ',' ".$bairro_agenda. " ', ' ".$cidade_agenda. " ',' ".$estado_agenda. " ',' ".$celular_agenda. " ',' ".$telefone_agenda. " ')";
+$sql= "INSERT INTO usuario (nome_agenda, apelido_agenda, bairro_agenda, cidade_agenda, estado_agenda, telefone_agenda, celular_agenda, email_agenda, telefone_agenda,foto_blob, foto_nome )
+VALUES (' " .$nome_agenda." ', ' ".$apelido_agenda. " ',' ".$email_agenda." ',' ".$bairro_agenda. " ', ' ".$cidade_agenda. " ',' ".$estado_agenda. " ',' ".$celular_agenda. " ','".$telefone_agenda."','".$telefone_agenda."','".$telefone_agenda."')";
 
 $result= mysqli_query ($con, $sql);
 if($result)
@@ -30,3 +30,6 @@ echo "Erro ao inserir no banco de dados" .mysqli_error($con);
 
 
 ?>
+<div>
+    <a href="index.php">Voltar</a>
+</div>
