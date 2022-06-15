@@ -1,6 +1,5 @@
-create database prova2;
-use prova2;
-DROP TABLE IF EXISTS fluxo_caixa;
+create database fluxo_caixa;
+use fluxo_caixa;
 CREATE TABLE fluxo_caixa
 (
     id_fluxo           INTEGER            NOT NULL AUTO_INCREMENT, 
@@ -9,5 +8,5 @@ CREATE TABLE fluxo_caixa
     valor        DECIMAL(10,2)      NOT NULL,
     historico    VARCHAR(150)       NOT NULL,
     cheque       VARCHAR(3)         NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id_fluxo)
 );

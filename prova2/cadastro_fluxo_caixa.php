@@ -11,7 +11,7 @@
     echo "Historico: " . $historico . "</p>";
     echo "Cheque: " . $cheque . "</p>";
 	
-	$sql = "INSERT INTO fluxo_caixa (data_fluxo,valor_fluxo,historico_fluxo, cheque_fluxo) 
+	$sql = "INSERT INTO fluxo_caixa (data,valor,historico, cheque) 
 	        VALUES ('".$data."','".$valor."','".$historico."','".$cheque."')";
 	//echo $sql;
 	$result = mysqli_query($con, $sql);

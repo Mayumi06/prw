@@ -13,14 +13,16 @@
         <form method="post" action="cadastro_fluxo_caixa.php" enctype='multipart/form-data'>
             <fieldset>
                 <legend>Cadastro</legend>
-                <div class="form-item">
-                    <label for="data">Data:</label>
-                    <input type="text" id="data" name="data" placeholder="Data:">
+                <div>
+                    <tr>
+                        <td>Data:</td>
+                        <td><input type="date" name="data"></td>
+                    </tr>
                 </div>
                 <div>
                     <td>Tipo:</td>
-                    <td><input name="tCaul" type="radio" id="cEntrada" value="0"><label for="cEntrada">Entrada</label><br></td>
-                    <td><input name="tCaul" type="radio" id="cSaida" value="1"><label for="cSaida">Saida</label><br></td>
+                    <td><input name="tCaul" type="radio" id="cEntrada" value="0"><label for="cEntrada">Entrada</label></td>
+                    <td><input name="tCaul" type="radio" id="cSaida" value="1"><label for="cSaida">Saida</label></td>
                 </div>
                 <div class="form-item">
                     <label for="valor">Valor:</label>

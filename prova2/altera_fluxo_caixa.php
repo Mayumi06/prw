@@ -22,21 +22,23 @@
             <fieldset>
                 <legend>Cadastro</legend>
                 <div>
-                <div class="form-item">
-                    <label for="data">Data:</label>
-                    <input type="text" id="data" name="data" value="<?php echo $row['data_fluxo']?>" placeholder="Data:">
+                <div>
+                <tr>
+                        <td>Data:</td>
+                        <td><input type="date" name="data"></td>
+                    </tr>
                 </div>
                 <div class="form-item">
                     <label for="valor">Valor:</label>
-                    <input type="text" id="valor" name="valor" value="<?php echo $row['valor_fluxo']?>" placeholder="Valor:">
+                    <input type="text" id="valor" name="valor" value="<?php echo $row['valor']?>" placeholder="Valor:">
                 </div>
                 <div class="form-item">
                     <label for="historico">Historico:</label>
-                    <input type="text" id="historico" name="historico" value="<?php echo $row['historico_fluxo']?>" placeholder="Historico:">
+                    <input type="text" id="historico" name="historico" value="<?php echo $row['historico']?>" placeholder="Historico:">
                 </div>
                 <div>
                 <td>Cheque:</td>
-    <td><select name="estado" <?php echo $row['cheque_fluxo']?> ><br>>
+    <td><select name="estado" <?php echo $row['cheque']?> ><br>>
         <option value="sim">sim</option>
         <option value="nao">nao</option>
     </select>

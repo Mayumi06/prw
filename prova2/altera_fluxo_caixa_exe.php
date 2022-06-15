@@ -10,9 +10,9 @@
     echo "<p> Data: " . $data . "<p>";    
 	
 	$sql = "UPDATE usuario SET
-            data_fluxo='".$data."',
-            valor_fluxo='".$valor."',
-            historico_fluxo='".$historico."'
+            data='".$data."',
+            valor='".$valor."',
+            historico='".$historico."'
             WHERE id_fluxo=".$id_fluxo;
 	    
 	$result = mysqli_query($con, $sql);
